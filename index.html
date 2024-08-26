@@ -10,33 +10,34 @@
 </head>
 
 <body class="body">
-    <header class="header">
-        <img src="./Assets/Frame 6.png" alt="Logo de Alura">
+    <header>
+        <div class="header">
+            <img class="logo-alura" src="./Assets/Frame 6.png" alt="Logo de Alura">
+        </div>
     </header>
 
-    <main class="main">
-        <section>
-            
-            <textarea class="cuadro-texto" cols="50" rows="20" placeholder="Ingresa el texto que desees encriptar o desencriptar aquí"></textarea>
-
-            <div class="informacion-adicional">
-                <img class="icono-exclamacion" src="./Assets/icono-exclamacion.png"><h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+    <main>
+        <div class="main">
+            <div class="campo-encriptador">
+                <textarea class="cuadro-texto" placeholder="Ingresa el texto que desees encriptar o desencriptar aquí"></textarea>
+                <div class="info">
+                    <img class="icono-exclamacion" src="./Assets/icono-exclamacion.png">
+                    <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                        <button>Encriptar</button>
+                        <button>Desencriptar</button>
+                </div>
             </div>
-
-            <div class="botones">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
-                <button>Limpiar</button>
-            </div>
-
-        </section>
-
-        <aside>
-            <img class="muneco" src="./Assets/Muñeco.png" alt="Muñeco"
-            <p> class="ningun-mensaje">Ningún mensaje fue encontrado</p>
-            <textarea class="texto-campo-desencriptado" name="mensaje-desencriptado" id="" cols="30" rows="20" placeholder="Ningún mensaje fue encontrado"></textarea>
-            <button class="boton-copiar">Copiar</button>
-        </aside>
+        </div>
+        <div class="campo-resultado">
+            <aside>
+                <img class="muneco" src="./Assets/Muñeco.png" alt="Muñeco"
+                <p class="ningun-mensaje">Ningún mensaje fue encontrado</p>
+                <p class="bajada-ningun-mensaje">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                <button class="boton-copiar">Copiar</button>
+            </aside>
+        </div>
     </main>
 
     <footer class="footer">
