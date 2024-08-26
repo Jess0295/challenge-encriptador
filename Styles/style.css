@@ -234,15 +234,12 @@ body{
 
 
 .footer{
-    display: flex;
-    justify-content:center;
+    background-color:var(--color-terciario);
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background: var(--color-terciario);
     font-family: var(--fuente-Krona);
-    font-size: 1em;
-    color: var(--color-fondo-textos);
+    color: var(--color-cuaternario);
+    padding: 24px;
+    font-weight: 400;
 }
 
 @media (max-width: 57.5em) {
@@ -265,15 +262,15 @@ body{
 
     .texto{
         width: 80%;
-        height: 60%;
+        height: 50%;
         left: 6%;
         top: 5%;
     }
 
     .terminos{
-        width: 80&;
+        width: 50%;
         left: 6%;
-        top: 67%;
+        top: 56%;
     }
 
     .terminos p{
@@ -283,12 +280,12 @@ body{
     .botones{
         width: 80%;
         left: 8%;
-        top: 70%;
+        top: 59%;
         justify-content:space-between;
     }
 
     .boton-encriptar, .boton-desencriptar{
-        width: 49%;
+        width: 52%;
         border-radius: 16px;
     }
 
@@ -296,7 +293,7 @@ body{
         width: 85%;
         height: 15%;
         left: 6%;
-        top: 80%;
+        top: 69%;
     }
 
     .mensaje-encriptado{
@@ -313,5 +310,11 @@ body{
         top: 0;
         display: none;
         visibility: hidden;
+    }
+
+    .footer{
+        text-align: center;
+        width: 90%;
+        height: 10%;
     }
 }
