@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="es-mx">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Encriptador Alura LATAM</title>
-    <link rel="stylesheet" href="./Styles/style.css"
-
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./Styles/style.css">
 </head>
-
-<body class="body">
+<body>
     <header>
-        <div class="header">
-            <img class="logo-alura" src="./Assets/Frame 6.png" alt="Logo de Alura">
-        </div>
+        <img src="./Assets/Frame 6 blanco.png">
     </header>
-
     <main>
-        <div class="main">
-            <div class="campo-encriptador">
-                <textarea class="cuadro-texto" placeholder="Ingresa el texto que desees encriptar o desencriptar aquí"></textarea>
-                <div class="info">
-                    <img class="icono-exclamacion" src="./Assets/icono-exclamacion.png">
-                    <p class="informacion">Solo letras minúsculas y sin acentos</p>
-                </div>
-                <div class="botones">
-                        <button class="boton-encriptar">Encriptar</button>
-                        <button class="boton-desencriptar">Desencriptar</button>
+        <div class="container">
+            <div class="encriptar">
+                <textarea
+                    class="texto"
+                    name="texto"
+                    id="texto" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Ingresa el texto aquí"
+                ></textarea>
+            </div>
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <input 
+                type="button" 
+                class="boton-desencriptar" 
+                value="Desencriptar" 
+                onclick="desencriptar()"
+                />
+            </div>
+            <div class="encriptado">
+                <img src="" alt="" id="muneco">
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que deseas encriptar</p>
+                    <textarea 
+                    class="mensaje" 
+                    name="mensaje" 
+                    id="mensaje" 
+                    cols="30" 
+                    rows="10"
+                    ></textarea>
                 </div>
             </div>
         </div>
-        <div class="campo-resultado">
-            <aside class="aside">
-                <img class="muneco" src="./Assets/Muñeco.png" alt="Muñeco"
-                <textarea class="bajada-ningun-mensaje">Ingresa el texto que deseas encriptar o desencriptar.</textarea>
-                <button class="boton-copiar">Copiar</button>
-            </aside>
-        </div>
     </main>
-
-    <footer class="footer">
-        <p>Jessica Valdebenito Vargas • G7 - ONE • Alura LATAM • 2024</p>
+    </main>
+    <footer>
 
     </footer>
-    <script src="app.js"></script>
 </body>
 </html>
