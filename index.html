@@ -9,18 +9,18 @@
 
 </head>
 
-<body>
-    <header>
-        <img class="logo-alura" src="./Assets/Frame 6.png" alt="Logo de Alura">
+<body class="body">
+    <header class="header">
+        <img src="./Assets/Frame 6.png" alt="Logo de Alura">
     </header>
 
-    <main>
-        <section>
-            <textarea class="campo-de-texto" name="campo-de-texto" id="" cols="60" rows="30" placeholder="Ingresa el texto que desees encriptar
+    <main class="main">
+        <section class="inicio-encriptador">
+            <textarea class="texto-campo-encriptador" name="campo-de-texto" id="" cols="50" rows="20" placeholder="Ingresa el texto que desees encriptar
             o desencriptar aquí"></textarea>
 
             <div class="texto-informacion">
-                <h6 class="informacion"><img src="./Assets/icono-exclamacion.png" alt="icono-exclamacion">Solo letras minúsculas y sin acentos</h6>
+                <img class="icono-exclamacion" src="./Assets/icono-exclamacion.png"><h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
 
             <div class="botones">
@@ -29,11 +29,12 @@
             </div>
 
         </section>
-            <textarea name="mensaje-desencriptado" id="" cols="60" rows="30" placeholder=""></textarea>
-            <div><button class="boton-copiar">Copiar</button>
-            </div>
-        <section>
 
+        <section class="resultado-encriptador">
+            <textarea class="texto-campo-desencriptado" name="mensaje-desencriptado" id="" cols="30" rows="20" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <div>
+                <button class="boton-copiar">Copiar</button>
+            </div>
         </section>
     </main>
 
