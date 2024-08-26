@@ -18,6 +18,21 @@
     padding: 0;
 }
 
+body{
+    height: auto;
+    box-sizing: border-box;
+    background-color:var(--color-cuaternario);
+}
+
+.header{
+    padding-top: 15px;
+}
+
+.logo-alura{
+    width: 10%;
+    top: 10%;
+}
+
 .container{
     position: relative;
     width: 100vw;
@@ -36,7 +51,7 @@
     border-radius: 25px;
     font-family: var(--fuente-Montserrat);
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2em;
     line-height: 150%;
     background: var(--color-fondo-textos);
     box-shadow: 4px 4px 5px -3px var(--color-terciario)
@@ -69,7 +84,7 @@
     font-family: var(--fuente-Krona);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8em;
     line-height: 150%;
     color: var(--color-primario);
     opacity: 0.8;
@@ -101,7 +116,7 @@
     border: none;
     border-radius: 15px;
     font-family: var(--fuente-Montserrat);
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 19px;
     text-align: center;
@@ -120,7 +135,7 @@
     border: none;
     border-radius: 15px;
     font-family: var(--fuente-Montserrat);
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 19px;
     text-align: center;
@@ -156,7 +171,7 @@
     align-items: center;
     justify-content: center;
     padding: 1%;
-    gap: 16px;
+    gap: 30px;
     position: absolute;
     width: 100%;
     top: 65%;
@@ -164,10 +179,10 @@
 }
 
 .imagen-muneco{
+    
     position: absolute;
     width: 80%;
-    height: 50%;
-    top: 15%;
+    top: 10%;
 }
 
 .mensaje-encriptado h2{
@@ -175,7 +190,7 @@
     font-family: var(--fuente-Krona);
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 120%;
     text-align: center;
     color: var(--color-terciario);
@@ -186,10 +201,117 @@
     font-family: var(--fuente-Montserrat);
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 150%;
     text-align: center;
     color: var(--color-primario);
 }
 
-@media 
+.boton-copiar{
+    width: 80%;
+    padding: 5%;
+    position:relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--color-primario);
+    border: none;
+    border-radius: 15px;
+    font-family: var(--fuente-Montserrat);
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.boton-copiar:hover{
+    font-family: var(--fuente-Montserrat);
+    background-color: var(--color-boton-hover);
+}
+
+
+.footer{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: var(--color-terciario);
+    font-family: var(--fuente-Krona);
+    font-size: 1em;
+    color: var(--color-fondo-textos);
+}
+
+@media (max-width: 57.5em) {
+
+    .logo-alura{
+        width: 20%;
+        top: 10%;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .encriptar{
+        width: 100%;
+        left: 6%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 6%;
+        top: 5%;
+    }
+
+    .terminos{
+        width: 80&;
+        left: 6%;
+        top: 67%;
+    }
+
+    .terminos p{
+        font-size: 16px;
+    }
+
+    .botones{
+        width: 80%;
+        left: 8%;
+        top: 70%;
+        justify-content:space-between;
+    }
+
+    .boton-encriptar, .boton-desencriptar{
+        width: 49%;
+        border-radius: 16px;
+    }
+
+    .encriptado{
+        width: 85%;
+        height: 15%;
+        left: 6%;
+        top: 80%;
+    }
+
+    .mensaje-encriptado{
+        width: 100%;
+        top: 5%;
+    }
+
+    .boton-copiar{
+        width: 100%;
+        height: 15%;
+    }
+
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}

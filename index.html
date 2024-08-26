@@ -6,9 +6,9 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="./Styles/style.css">
 </head>
-<body>
-    <header>
-        <img class="./Assets/Frame 6 blanco.png">
+<body class="body">
+    <header class="header">
+        <img class="logo-alura" src="/Assets/Frame 6.png">
     </header>
     <main>
         <div class="container">
@@ -41,6 +41,9 @@
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
                     <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
                     <p id="parrafo">Ingresa el texto que deseas encriptar</p>
+                    <button class="boton-copiar" type="button" onclick="copiar()">
+                        Copiar
+                    </button>
                     <!--<textarea 
                     class="mensaje" 
                     name="mensaje" 
@@ -53,8 +56,8 @@
         </div>
     </main>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p>Desarrollado por Jessica valdebenito Vargas • G7 ONE • 2024</p>
     </footer>
 </body>
 </html>
