@@ -3,8 +3,193 @@
 :root{
     --color-primario: #674188;
     --color-secundario: #f6f6f6;
-    --color-terciario: #22D4FD;
+    --color-terciario: #1f1049;
+    --color-cuaternario: #f6edfd;
+    --color-boton-hover: #8f6cad;
+    --color-boton-hover2: #3c305f;
+    --color-fondo-textos: #ffffff;
 
     --fuente-Montserrat: 'Montserrat', sans-serif;
     --fuente-Krona: 'Krona One', sans-serif;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-cuaternario);
+}
+
+.texto{
+    padding: 10px 15px 0px 15px;
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 12%;
+    top: 20%;
+    border: none;
+    border-radius: 25px;
+    font-family: var(--fuente-Montserrat);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    background: var(--color-fondo-textos);
+    box-shadow: 4px 4px 5px -3px var(--color-terciario)
+}
+
+.texto::placeholder{
+    color: var(--color-primario);
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.terminos p{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: var(--fuente-Krona);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--color-primario);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0%;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+    gap: 13px;
+    padding-top: 30px;
+}
+
+.boton-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 24.5%;
+    background: var(--color-terciario);
+    border: none;
+    border-radius: 15px;
+    font-family: var(--fuente-Montserrat);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.boton-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    width: 24.5%;
+    background: var(--color-primario);
+    border: none;
+    border-radius: 15px;
+    font-family: var(--fuente-Montserrat);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.boton-desencriptar:hover{
+    font-family: var(--fuente-Montserrat);
+    background-color: var(--color-boton-hover);
+}
+
+.boton-encriptar:hover{
+    font-family: var(--fuente-Montserrat);
+    background-color: var(--color-boton-hover2);
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: var(--color-fondo-textos);
+    border-radius: 25px;
+    box-shadow: 4px 4px 5px -3px var(--color-terciario)
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.imagen-muneco{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+.mensaje-encriptado h2{
+    width: 80%;
+    font-family: var(--fuente-Krona);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: var(--fuente-Montserrat);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-primario);
+}
+
+@media 
