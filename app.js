@@ -4,7 +4,7 @@ function encriptar() {
     let parrafo = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
   
-    let textoCifrado = texto
+    let textoCifrado = texto.toLowerCase()
       .replace(/e/gi, "enter")
       .replace(/i/gi, "imes")
       .replace(/a/gi, "ai")
@@ -31,7 +31,7 @@ function desencriptar() {
   let parrafo = document.getElementById("parrafo");
   let muñeco = document.getElementById("muñeco");
 
-  let textoCifrado = texto
+  let textoCifrado = texto.toLowerCase()
     .replace(/enter/gi, "e")
     .replace(/imes/gi, "i")
     .replace(/ai/gi, "a")
@@ -51,3 +51,18 @@ function desencriptar() {
     }
 }
 
+// function validacion() {
+//   const texto = document.getElementById("texto").value;
+
+//   if (textoCifrado === "") {
+//     return true;
+//   }
+
+//   const validacion = /^[a-z\s]+$/g.test(textoCifrado);
+
+//   if (!validacion) {
+//     alert("No se aceptan mayúsculas ni caracteres especiales.");
+//     return false;
+//   }
+//   return true;
+// }
